@@ -1,7 +1,6 @@
 package be.vdab.goededoel.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.BIG_DECIMAL;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,6 +20,6 @@ class GoedeDoelTest {
 	}
 
 	@Test
-	void eenNieuwDoelHeeftNogGeenOpbrengst() { assertThat(doel.getOpbrengst()).isEqualTo(10);
+	void eenNieuwDoelHeeftNogGeenOpbrengst() { assertThat(doel.getOpbrengst()).isZero();
 	}
 }
